@@ -6,7 +6,7 @@ const Navbar = () =>
   return (
     <nav>
       <NavbarLink path="/">Home</NavbarLink>&nbsp;&nbsp;
-      <NavbarLink path="/work">Work</NavbarLink>&nbsp;&nbsp;
+      <NavbarLink path="/Project">Project</NavbarLink>&nbsp;&nbsp;
       <NavbarLink path="/experience">Experience</NavbarLink>&nbsp;&nbsp;
       <NavbarLink path="/education">Education</NavbarLink>&nbsp;&nbsp;
       <NavbarLink path="/blog">Blog</NavbarLink>&nbsp;&nbsp;

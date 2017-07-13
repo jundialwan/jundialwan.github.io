@@ -8,7 +8,7 @@ const App = () =>
 {
   return (
     <div className="row">
-      <div className="col-md-8 col-sm-12 col-md-offset-2">
+      <div className="col-md-10 col-sm-12 col-md-offset-1">
         <Jumbotron />
         <Navbar />
         <BodyPage />        

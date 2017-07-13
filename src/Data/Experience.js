@@ -13,6 +13,13 @@ const experience = [
     logo: '/static/img/ggj.png',
     link: 'http://globalgamejam.org',
   },
+  {
+    title: 'Head of Project Development Division',
+    institution: 'Ristek Fasilkom UI',
+    time: 'Jan - Dec 2016',
+    logo: '/static/img/ristek.png',
+    link: 'http://ristek.cs.ui.ac.id',
+  },
 ];
 
 export default experience;

@@ -1,12 +1,18 @@
 import React from 'react';
+import ExperienceSection from './ExperienceSection';
 
-const Education = () =>
+import educationData from '../Data/Education';
+
+const Experience = () =>
 {
   return (
     <div>
-      This is Education
+      <ExperienceSection 
+        section="Education"
+        data={educationData}
+      />
     </div>
   );
 };
 
-export default Education;
+export default Experience;

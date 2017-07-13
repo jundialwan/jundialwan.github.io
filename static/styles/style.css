@@ -103,12 +103,17 @@ u.dotted
   border-bottom: 1px dotted #444;
 }
 
-.work-list
+.experience-section
+{
+  margin-bottom: 36px;
+}
+
+.experience-list
 {
   list-style: none;
 }
 
-.work-list li
+.experience-list li
 {
   margin-bottom: 20px;
 }
