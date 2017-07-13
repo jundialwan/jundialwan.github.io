@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Average|Ubuntu');
+
+html 
+{
+  background-color: #eee;
+}
+
+body
+{
+  font-family: 'Average', sans-serif !important;  
+  color: #444;
+}
+
+.ubuntu-font
+{
+  font-family: 'Ubuntu', serif !important;
+}
+
+.fa
+{
+  padding: 8px;
+  margin: 0 4px;
+  width: 32px;
+  font-size: 16px;
+  border-radius: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #DDD;
+  background-color: #444;
+}
+
+.fa:hover
+{
+  color: #444;
+  background-color: #DDD;
+}
+
+.jumbotron .container img
+{
+  width: 120px;
+  border-radius: 100%;  
+}
+
+u.dotted
+{
+  text-decoration: none;
+  border-bottom: 1px dotted #444;
+}
+
+/* Phone */
+@media only screen and (max-width: 600px)
+{
+
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px)
+{
+
+}

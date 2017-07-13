@@ -1,6 +1,6 @@
 {
   "root": true,
-  "parser": "babel-eslint",
+  "parser": "babel-eslint",  
   "extends": "airbnb",
   "env": {
   "browser": true
@@ -10,8 +10,13 @@
     "no-plusplus": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": ["./webpack.config.js"]}],
     "react/forbid-prop-types": "off",
+    "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "no-trailing-spaces": "off",
+    "arrow-body-style": "off",
+    "brace-style": "off",
+    "no-unused-vars": "warn"
   },
   "parserOptions": {
     "ecmaFeatures": {
