@@ -11,34 +11,85 @@ body
   color: #444;
 }
 
+a
+{
+  color: #888;  
+}
+
+nav
+{
+  padding: 12px;
+  text-align: center;
+}
+
+a:hover
+{
+  color: #000;
+  text-decoration: none;  
+  border-bottom: 1px dotted #000;
+}
+
+a:visited
+{
+  text-decoration: none;
+}
+
+a:focus
+{
+  text-decoration: none;
+  color: #000;
+}
+
+.active-link
+{
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+}
+
 .ubuntu-font
 {
   font-family: 'Ubuntu', serif !important;
 }
 
 .fa
-{
-  padding: 8px;
-  margin: 0 4px;
-  width: 32px;
-  font-size: 16px;
+{  
+  margin-right: 12px;
+  width: 20px;
+  font-size: 18px;
   border-radius: 100%;
   text-align: center;
   text-decoration: none;
-  color: #DDD;
-  background-color: #444;
+  color: #888;
+  
 }
 
 .fa:hover
 {
-  color: #444;
-  background-color: #DDD;
+  color: #000;  
+}
+
+.jumbotron
+{
+  background: none;
+  margin-bottom: 0 !important;
 }
 
 .jumbotron .container img
 {
   width: 120px;
   border-radius: 100%;  
+  border: 1px solid #000;
+}
+
+.jumbotron-name
+{
+  margin-top: 8px !important;
+}
+
+.social-media-bar
+{
+  margin-top: 20px;
 }
 
 u.dotted
