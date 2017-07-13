@@ -1,5 +1,5 @@
 import React from 'react';
-import WorkItem from './WorkItem';
+import ExperienceItem from './ExperienceItem';
 
 import workItemData from '../Data/Work';
 
@@ -13,11 +13,12 @@ const Work = () =>
         {workItemData.map((work) => {
           return (
             <li key={work.logo}>
-              <WorkItem 
+              <ExperienceItem
                 imgSrc={work.logo} 
                 title={work.title}
-                company={work.company}
+                institution={work.company}
                 time={work.time}
+                link={work.link}
               />
             </li>        
           );

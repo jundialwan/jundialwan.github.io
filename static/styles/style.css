@@ -113,9 +113,15 @@ u.dotted
   margin-bottom: 20px;
 }
 
+.work-item
+{
+  border-left: 4px solid #444;
+  padding-left: 12px;
+}
+
 .work-item img
 {
-  height: 44px;
+  height: 54px;
 }
 
 /* Phone */
