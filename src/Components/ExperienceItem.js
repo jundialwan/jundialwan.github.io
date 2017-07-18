@@ -4,7 +4,7 @@ const WorkItem = (props) =>
 {
   return (
     <div className="work-item">
-      <img className="pull-right" src={props.imgSrc} alt={props.institution} />
+      <img className="pull-right-on-desktop center-block-on-mobile" src={props.imgSrc} alt={props.institution} />
       <h4>{props.title}</h4>
       <h5>{props.institution}</h5>
       <h6>{props.time}</h6>

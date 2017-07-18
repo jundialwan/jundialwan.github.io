@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 
 import Home from './Home';
 import Project from './Project';
-import Education from './Education';
 import Experience from './Experience';
 
 const BodyPage = () =>
@@ -12,8 +11,7 @@ const BodyPage = () =>
     <div className="">
       <div className="">
         <Route exact path="/" component={Home} />
-        <Route path="/project" component={Project} />
-        <Route path="/education" component={Education} />
+        <Route path="/project" component={Project} />        
         <Route path="/experience" component={Experience} />
       </div>
     </div>

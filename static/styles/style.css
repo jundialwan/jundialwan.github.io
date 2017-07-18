@@ -2,13 +2,14 @@
 
 html 
 {
-  background-color: #eee;
+  background-color: #F0F0F0;
 }
 
 body
 {
   font-family: 'Average', sans-serif !important;  
   color: #444;
+  background-color: #F0F0F0;
   font-size: 16px;
   padding-bottom: 48px;
 }
@@ -63,6 +64,26 @@ a:focus
   text-decoration: none;
   color: #888;
   
+}
+
+.panel
+{
+  border-radius: 0;
+}
+
+.panel-default
+{
+  border-color: #000;
+}
+
+.panel-default > .panel-heading
+{
+  border-color: #000;
+}
+
+.label
+{
+  padding: .3em .6em .2em;
 }
 
 .fa:hover
@@ -132,7 +153,7 @@ u.dotted
 }
 
 /* Phone */
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
 {
   .jumbotron-img
   {
@@ -149,13 +170,19 @@ u.dotted
     text-align: center;
   }
 
-  .jumbotron-name
-  {    
+  .center-block-on-mobile
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* Tablets */
 @media only screen and (min-width: 768px)
 {
-  
+  .pull-right-on-desktop
+  {
+    float: right !important;
+  }
 }

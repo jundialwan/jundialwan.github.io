@@ -7,8 +7,7 @@ const Navbar = () =>
     <nav>
       <NavbarLink path="/">Home</NavbarLink>&nbsp;&nbsp;
       <NavbarLink path="/project">Project</NavbarLink>&nbsp;&nbsp;
-      <NavbarLink path="/experience">Experience</NavbarLink>&nbsp;&nbsp;
-      <NavbarLink path="/education">Education</NavbarLink>&nbsp;&nbsp;      
+      <NavbarLink path="/experience">Experience</NavbarLink>&nbsp;&nbsp;            
     </nav>
   );
 };

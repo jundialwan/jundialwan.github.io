@@ -3,11 +3,17 @@ import ExperienceSection from './ExperienceSection';
 
 import experienceItemData from '../Data/Experience';
 import workItemData from '../Data/Work';
+import educationData from '../Data/Education';
 
 const Experience = () =>
 {
   return (
     <div>
+      <ExperienceSection 
+        section="Education"
+        data={educationData}
+      />
+
       <ExperienceSection 
         section="Work Experience"
         data={workItemData}

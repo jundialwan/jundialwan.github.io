@@ -20,11 +20,12 @@ const App = () =>
         </div>
       </div>
 
-      <div className="row" style={{ marginTop: '24px' }}>
+      <div className="row" style={{ marginTop: '24px', marginBottom: '24px' }}>
         <div className="col-md-8 col-sm-12 col-md-offset-2">        
           <BodyPage />                
         </div>
-      </div>    
+      </div>   
+            
     </div>
   );
 };

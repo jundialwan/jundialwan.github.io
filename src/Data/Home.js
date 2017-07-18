@@ -2,8 +2,7 @@ import React from 'react';
 
 const home = () => { 
   return (
-    <div style={{ textAlign: 'justify' }}>
-      
+    <div style={{ textAlign: 'justify' }}>      
       Welcome. <br /><br />
       I know, this website looks boring. Dull color. Black white (grey).
       I keep it for simplicity. *i have a bad taste at design lol <br /><br />

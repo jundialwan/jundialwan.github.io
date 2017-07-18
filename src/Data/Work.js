@@ -3,7 +3,7 @@ const workItem = [
     title: 'Software Engineer, Part time',
     company: 'Bukapintu',
     time: 'May 2017 - present',
-    logo: '/static/img/bukapintu.png',
+    logo: '/static/img/bukapintu.jpg',
     link: 'http://bukapintu.co',
   },
   {
