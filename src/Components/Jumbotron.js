@@ -11,7 +11,7 @@ const Jumbotron = () =>
       <div className="col-md-8 col-sm-12 text-center-on-mobile">
         <h2 className="jumbotron-name ubuntu-font"><u className="dotted">Jundi</u> Ahmad Alwan</h2>
         <div>
-          Web Developer. Trying to master frontend. Computer Science Student. 
+          Web Developer. Trying to master web frontend. Computer Science Student. 
         </div>
         <SocialMediaBar />
       </div>

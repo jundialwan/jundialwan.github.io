@@ -3,13 +3,7 @@ import React from 'react';
 const home = () => { 
   return (
     <div style={{ textAlign: 'justify' }}>
-      <div style={{ borderLeft: '4px solid #444', paddingLeft: '12px' }}>
-        <em>
-          I have specific interest in JavaScript and Frontend web development, 
-          proficient in HTML, CSS, PHP, JavaScript, and frontend framework and
-          two years experience in web project management handling various project.
-        </em>
-      </div> <br />
+      
       Welcome. <br /><br />
       I know, this website looks boring. Dull color. Black white (grey).
       I keep it for simplicity. *i have a bad taste at design lol <br /><br />
