@@ -9,6 +9,8 @@ body
 {
   font-family: 'Average', sans-serif !important;  
   color: #444;
+  font-size: 16px;
+  margin-bottom: 48px;
 }
 
 a
