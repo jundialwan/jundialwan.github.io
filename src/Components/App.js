@@ -7,12 +7,24 @@ import BodyPage from './BodyPage';
 const App = () => 
 {
   return (
-    <div className="row">
-      <div className="col-md-10 col-sm-12 col-md-offset-1">
-        <Jumbotron />
-        <Navbar />
-        <BodyPage />        
+    <div className="container-fluid">
+      <div className="row" style={{ marginTop: '24px' }}>
+        <div className="col-md-8 col-sm-12 col-md-offset-2">
+          <Jumbotron />
+        </div>
       </div>
+
+      <div className="row" style={{ marginTop: '24px' }}>
+        <div className="col-md-8 col-sm-12 col-md-offset-2">
+          <Navbar />        
+        </div>
+      </div>
+
+      <div className="row" style={{ marginTop: '24px' }}>
+        <div className="col-md-8 col-sm-12 col-md-offset-2">        
+          <BodyPage />                
+        </div>
+      </div>    
     </div>
   );
 };

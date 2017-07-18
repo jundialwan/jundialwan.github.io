@@ -9,10 +9,10 @@ import Experience from './Experience';
 const BodyPage = () =>
 {
   return (
-    <div className="jumbotron">
-      <div className="container">
+    <div className="">
+      <div className="">
         <Route exact path="/" component={Home} />
-        <Route path="/Project" component={Project} />
+        <Route path="/project" component={Project} />
         <Route path="/education" component={Education} />
         <Route path="/experience" component={Experience} />
       </div>

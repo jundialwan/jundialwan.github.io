@@ -6,7 +6,7 @@ const ExperienceSection = (props) =>
 {
   return (
     <div className="experience-section">
-      <h3>{props.section}</h3>
+      <h3 className="ubuntu-font">{props.section}</h3>
       
       <ul className="experience-list">
         {props.data.map((item) => {
