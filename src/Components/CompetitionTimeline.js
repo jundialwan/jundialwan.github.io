@@ -94,7 +94,8 @@ const CompetitionTimeline = () =>
             <CompetitionItem {...comp} />
           </TimelineItem>,
         )
-      }            
+      }  
+      <TimelineItem date={new Date('2009-06-01')} start />          
     </div>
   );
 };

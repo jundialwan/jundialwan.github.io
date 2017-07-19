@@ -24,6 +24,49 @@ nav
   text-align: center;
 }
 
+.navbar
+{
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default
+{
+  background: none;
+  border-color: transparent;
+}
+
+.navbar-toggle
+{
+  float: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-toggle
+{
+  border: 2px solid #888;  
+}
+
+.nav > li > a
+{
+  padding: 0 4px;
+}
+
+.navbar-nav > li > a
+{
+  padding: 0 4px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 a:hover
 {
   color: #000;
@@ -176,6 +219,11 @@ u.dotted
     margin-left: auto;
     margin-right: auto;
   }
+
+  .navbar-nav > li > a
+  {
+    padding: 4px 4px;
+  }
 }
 
 /* Tablets */
@@ -184,5 +232,10 @@ u.dotted
   .pull-right-on-desktop
   {
     float: right !important;
+  }
+
+  .navbar-nav > li > a
+  {
+    padding: 0 4px;
   }
 }
