@@ -8,6 +8,7 @@ const Navbar = () =>
       <NavbarLink path="/">Home</NavbarLink>&nbsp;&nbsp;
       <NavbarLink path="/project">Project</NavbarLink>&nbsp;&nbsp;
       <NavbarLink path="/experience">Experience</NavbarLink>&nbsp;&nbsp;            
+      <NavbarLink path="/rubiks">Rubik&#39;s Cube</NavbarLink>&nbsp;&nbsp;            
     </nav>
   );
 };

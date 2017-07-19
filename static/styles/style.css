@@ -55,8 +55,7 @@ a:focus
 }
 
 .fa
-{  
-  margin-right: 12px;
+{    
   width: 20px;
   font-size: 18px;
   border-radius: 100%;
@@ -84,6 +83,7 @@ a:focus
 .label
 {
   padding: .3em .6em .2em;
+  border-radius: 0;
 }
 
 .fa:hover
