@@ -76,7 +76,7 @@ const rubiksCompetition = [
     place: 'Pluit Village Mall, Jakarta Utara',
     date: '2017-08-04',
     days: 3,
-    going: 1,
+    going: 2,
     link: 'https://www.worldcubeassociation.org/competitions/IndonesianChampionship2017',
   },
   {
@@ -86,6 +86,14 @@ const rubiksCompetition = [
     days: 2,
     going: 2,
     link: 'https://www.worldcubeassociation.org/competitions/RainCityCubeCompetition2017',
+  },
+  {
+    title: 'Rubikku Champ 2017',
+    place: 'Bandara City Mall, Dadap, Tangerang',
+    date: '2017-10-21',
+    days: 2,
+    going: 2,
+    link: 'https://www.worldcubeassociation.org/competitions/RubikkuChamp2017',
   },
 ];
 
