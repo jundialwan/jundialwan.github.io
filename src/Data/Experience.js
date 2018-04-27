@@ -1,6 +1,13 @@
 const experience = [
   {
-    title: 'Steering Committee, Executive Officer, Vice of Head Division',
+    title: 'Organizer',
+    institution: 'CSUI Developer Community',
+    time: '2017 - present',
+    logo: '/static/img/ui.png',
+    link: 'https://www.facebook.com/groups/154570601553683/',
+  },
+  {
+    title: 'Steering Committee, Executive Officer, Vice Head of Application Development Competition',
     institution: 'CompFest',
     time: '2016, 2015, 2014 (respectively)',
     logo: '/static/img/compfest.png',

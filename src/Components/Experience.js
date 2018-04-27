@@ -8,12 +8,7 @@ import educationData from '../Data/Education';
 const Experience = () =>
 {
   return (
-    <div>
-      <ExperienceSection 
-        section="Education"
-        data={educationData}
-      />
-
+    <div>    
       <ExperienceSection 
         section="Work Experience"
         data={workItemData}
@@ -22,6 +17,11 @@ const Experience = () =>
       <ExperienceSection 
         section="Volunteering & Organization Experience"
         data={experienceItemData}
+      />
+
+      <ExperienceSection 
+        section="Education"
+        data={educationData}
       />
     </div>
   );
