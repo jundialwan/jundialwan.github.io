@@ -7,8 +7,8 @@ const home = () => {
       I know, this website looks boring. Dull color. Black white (grey).
       I keep it for simplicity. *i have a bad taste at design lol <br /><br />
 
-      My bad, let me introduce myself. <br />
-      Hi, my name is <strong>Jundi</strong>. 
+      Let me introduce myself. <br />
+      My name is <strong>Jundi</strong>. 
       I&#39;m a computer science student and web developer living in Indonesia.
       I have specific interest in JavaScript, React, and frontend web development stuff,
       and proficient in HTML, CSS, and JavaScript.
