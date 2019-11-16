@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name='title' content='Jundi Alwan - Read and Write')
+    meta(name='description' content="Jundi Alwan's personal website. You'll find my personal blog and other personal writings here. All my writings represent my opinion and thought.")
+    meta(name='keywords' content='jundi, jundi alwan, jundi ahmad alwan,')
+    meta(name='robots' content='index, follow')
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+    meta(name='language' content='English')
+    meta(name='author' content='Jundi Alwan')
+    
+    title Jundi Alwan - Read and Write
+
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap", rel="stylesheet")
+    link(rel="stylesheet", href="/css/index.css")
+
+    block metaExtension
+
+  body
+    .container
+      .header
+        h1 Jundi Alwan
+        .menu
+          //- a.menu-link(href='/stories.html')
+          //-   .menu-item All Stories
+          a.menu-link(href="/")
+            .menu-item 🏠
+          a.menu-link(href='/about.html')
+            .menu-item About
+          a.menu-link(href='https://twitter.com/ja_alwan' target='jundialwan_twitter')
+            .menu-item Twitter
+          a.menu-link(href='https://medium.com/@jundialwan' target='jundialwan_medium')
+            .menu-item Medium
+      hr
+      block main-content
+
+      .footer
+        .footer-nav
+          a(href="#") Back to top
+        hr
+        .footer-content
+          span &copy; 2019 Jundi Alwan.
+          br
+          p.about-disclaimer
+            b DISCLAIMER:
+            br
+            | This is my personal website. 
+            | You'll find my personal blog and other personal writings here. 
+            | All my writings represent only my opinions and thoughts.
+            | You couldn't use it as a scientific reference nor put it on your thesis bibliography as it might sound hilarious and you will get scolded by your thesis advisor.
+            | As you may find my content in this blog personally offensive for you, by reading this sentence you are agree to NOT sue me for any regret, vexation, heartbreak, or any related terms to you being a clown that caused by one or more content originated from this site. 
+            a(href="/disclaimer.html") A serious disclaimer page.
+      

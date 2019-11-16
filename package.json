@@ -1,0 +1,28 @@
+{
+  "name": "jundialwan.github.io",
+  "version": "1.0.0",
+  "description": "github page personal website",
+  "main": "index.js",
+  "scripts": {
+    "build.dev": "pug ./src --out ./dist --watch",
+    "start.dev": "static-html-server -r ./dist -f 404.html",
+    "build": "pug ./src --out ./dist",
+    "deploy": "npm run build && gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jundialwan/jundialwan.github.io.git"
+  },
+  "author": "Jundi Alwan <jundialwan.id> (jundi.alwan@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jundialwan/jundialwan.github.io/issues"
+  },
+  "homepage": "https://jundialwan.id",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "static-html-server": "^0.1.2"
+  }
+}
