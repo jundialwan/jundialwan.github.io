@@ -1,40 +1,31 @@
 {
-  "name": "spa-github-pages",
-  "version": "5.0.0",
-  "private": true,
-  "description": "Single Page Apps for GitHub Pages",
+  "name": "jundialwan.github.io",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open --progress --colors --watch",
-    "build": "webpack -p"
+    "dev": "next",
+    "build": "next build",
+    "start": "netx start",
+    "export": "npm run build && next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/spa-github-pages.git"
+    "url": "git+https://github.com/jundialwan/jundialwan.github.io.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
-  "license": "MIT",
+  "author": "Jundi Alwan <jundi.alwan@gmail.com> (jundialwan.id)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jundialwan/jundialwan.github.io/issues"
+  },
+  "homepage": "https://github.com/jundialwan/jundialwan.github.io#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-interactive": "^0.6.5",
-    "react-router-dom": "^4.1.1"
+    "next": "^9.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.5"
+    "frontmatter-markdown-loader": "^3.3.0"
   }
 }
