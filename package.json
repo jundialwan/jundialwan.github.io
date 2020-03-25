@@ -1,13 +1,12 @@
 {
   "name": "jundialwan.github.io",
-  "version": "1.0.0",
-  "description": "Personal site",
+  "version": "0.1.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 7676",
     "build": "next build",
-    "start": "netx start",
-    "export": "npm run build && next export",
+    "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,11 +20,18 @@
   },
   "homepage": "https://github.com/jundialwan/jundialwan.github.io#readme",
   "dependencies": {
+    "frontmatter-markdown-loader": "^3.3.0",
     "next": "^9.3.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^3.3.0"
+    "@types/node": "^12.12.31",
+    "@types/react": "^16.9.25",
+    "@types/styled-components": "^5.0.1",
+    "raw-loader": "^4.0.0",
+    "typescript": "^3.8.3"
   }
 }
