@@ -1,7 +1,26 @@
 // import App from 'next/app'
+import 'nprogress/nprogress.css'
 import styled, { createGlobalStyle } from 'styled-components'
 import Head from 'next/head'
 import Link from 'next/link'
+import Router from 'next/router'
+import NProgress from 'nprogress'
+
+// configure progesrs bar on top off app
+NProgress.configure({ trickleSpeed: 50 })
+
+Router.onRouteChangeStart = () => {
+  NProgress.start()
+  NProgress.inc(.24)
+}
+
+Router.onRouteChangeComplete = () => {
+  NProgress.done()
+}
+
+Router.onRouteChangeError = () => {
+  NProgress.done()
+}
 
 const size = {
   mobileS: '320px',
