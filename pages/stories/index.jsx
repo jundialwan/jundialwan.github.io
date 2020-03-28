@@ -2,7 +2,6 @@ import stories from '../../stories-md'
 import Link from 'next/link'
 
 const Stories = () => {
-  console.log(stories)
   return (
     <>
       <h1>List of all Stories</h1>

@@ -1,6 +1,3 @@
-
-# My Own Version of Generated Function Redux Reducer
-
 Boiling water. Via Flickr.
 
 Do you use React + Redux? Do you rewrite your code for every reducer? You should not because writing it waste your time. So, what is the solution? **Create a generating function for reducer**. It means that we just have to provide initial state and reducer handler without rewriting all reducer logic, generated reducer function will take care of that.

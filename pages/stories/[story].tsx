@@ -7,12 +7,14 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 const MarkdownRender = styled.div({
-  fontFamily: 'sans-serif',
-  lineHeight: '2.0rem',
   '& pre': {
     border: '1px solid #000',
     padding: '16px',
-    backgroundColor: '#fff111'
+    backgroundColor: '#fff111',
+
+    '& code': {
+      whiteSpace: 'pre-wrap'
+    } 
   }
 })
 
