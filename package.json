@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/jundialwan/jundialwan.github.io#readme",
   "dependencies": {
-    "frontmatter-markdown-loader": "^3.3.0",
     "next": "^9.3.1",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
@@ -30,6 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.31",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^16.9.25",
     "@types/styled-components": "^5.0.1",
     "raw-loader": "^4.0.0",

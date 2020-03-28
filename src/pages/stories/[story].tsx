@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router'
 import ReactMarkdown from 'react-markdown'
-import stories from '../../stories-md'
-import { NextPage } from 'next'
+import stories, { Story } from '../../stories-md'
+import { NextPage, NextPageContext } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
+import { formatDate } from '../../Utils'
 
-const MarkdownRender = styled.div({
+const StoryBody = styled.div({
   '& pre': {
     border: '1px solid #000',
     padding: '16px',
@@ -18,34 +19,74 @@ const MarkdownRender = styled.div({
   }
 })
 
-const Story: NextPage<{}> = () => {
-  const router = useRouter()
-  const selectedStory: string = router.query['story'] as string
-  const story = stories.filter(s => s.url === selectedStory)[0]
+const StoryTitle = styled.h1({
+  fontSize: '2.2rem',
+  margin: '8px 0'
+})
+
+const StoryDate = styled.span({
+  fontSize: '1.2rem',
+  fontStyle: 'italic'
+})
+
+const BackToTopNav = styled.div({
+  float: 'right',
+  padding: '16px',
+  textAlign: 'right'
+})
+
+const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
   
   return (
     <>
       <Head>
-        <title>{story.title}</title>
+        {
+          story === undefined ?
+          (
+            <title>Story not found</title>
+          ):
+          (
+            <title>{story.title}</title>
+          )
+        }
       </Head>
-      <h1>
-        {story.title}
-      </h1>
-      <Link href="/stories">
-        <a>&lt;&lt; Back to list of stories</a>
-      </Link>
-      <MarkdownRender>
-        <ReactMarkdown escapeHtml={true} source={story.md}/>
-      </MarkdownRender>
+      {
+        story === undefined ?
+        (
+          <div>Story not found</div>
+        ) :
+        (
+          <>
+            <StoryTitle>
+              {story.title}
+            </StoryTitle>
+            <StoryDate>
+              {formatDate(typeof window === 'undefined' ? story.createdAt : new Date(story.createdAt) )}
+            </StoryDate>
+            <StoryBody>
+              <ReactMarkdown escapeHtml={true} source={story.md}/>
+            </StoryBody>
+
+            <BackToTopNav>
+              <a href="#top" title="back to top">
+                ^ back to top
+              </a>
+            </BackToTopNav>
+          </>
+        )
+      }
+      
     </>
   )
 }
 
-Story.getInitialProps = async (context) => {
+StoryPage.getInitialProps = async (ctx: NextPageContext) => {
+  const story = ctx.query['story'] as string
+  const selectedStory = stories.filter(f => f.url === story)[0]
 
   return {
-    props: true
+    story: selectedStory
   }
 }
 
-export default Story
+export default StoryPage

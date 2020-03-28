@@ -1,26 +1,28 @@
 // import App from 'next/app'
 import 'nprogress/nprogress.css'
 import styled, { createGlobalStyle } from 'styled-components'
+import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
 import Router from 'next/router'
 import NProgress from 'nprogress'
+import { NextPage } from 'next'
 
 // configure progesrs bar on top off app
 NProgress.configure({ trickleSpeed: 50 })
 
-Router.onRouteChangeStart = () => {
+Router.events.on('routeChangeStart', () => {
   NProgress.start()
   NProgress.inc(.24)
-}
+})
 
-Router.onRouteChangeComplete = () => {
+Router.events.on('routeChangeComplete', () => {
   NProgress.done()
-}
+})
 
-Router.onRouteChangeError = () => {
+Router.events.on('routeChangeError', () => {
   NProgress.done()
-}
+})
 
 const size = {
   mobileS: '320px',
@@ -89,11 +91,32 @@ const LogoType = styled.div({
   padding: '4px 8px',
   backgroundColor: '#DDD',
   fontWeight: 'bolder',
-  marginRight: '4px'
+  marginRight: '4px',
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+
+  '& a': { color: '#212121', textDecoration: 'none' },
+  '& a:hover': { color: '#212121' },
+  '& a:visit': { color: '#212121' },
+  '& a:active': { color: '#212121' }
+})
+
+const SiteMenu = styled.div({
+  padding: '0 8px',
+  backgroundColor: '#DDD',
+  fontWeight: 'bolder',
+  marginRight: '4px',
+  fontSize: '1rem',
+
+  '& a': { color: '#212121' },
+  '& a:hover': { color: '#212121' },
+  '& a:visit': { color: '#212121' },
+  '& a:active': { color: '#212121' }
 })
 
 
-function MyApp({ Component, pageProps }) {
+const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <GlobalStyle />
@@ -101,6 +124,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>jundialwan - Personal Blog</title>
       </Head>
+      <div id="top"></div>
       <GlobalContainer>
         <NavigationHeader>
           <LogoType>
@@ -109,28 +133,40 @@ function MyApp({ Component, pageProps }) {
                 jundialwan
               </a>
             </Link>
-          </LogoType> 
-          <LogoType>
-            <a href="https://twitter.com/ja_alwan">
+          </LogoType>
+          {/* <LogoType>
+            <a href="https://twitter.com/ja_alwan" target="jundialwan__twitter">
               TW
             </a>
           </LogoType> 
           <LogoType>
-            <a href="https://medium.com/jundialwan">
+            <a href="https://medium.com/@jundialwan" target="jundialwan__medium">
               MD
             </a>
           </LogoType>
           <LogoType>
-            <a href="https://github.com/jundialwan">
+            <a href="https://github.com/jundialwan" target="jundialwan__github"> 
               GH
             </a>
           </LogoType>
           <LogoType>
-            <a href="mailto:jundi.alwan@gmail.com">
+            <a href="mailto:jundi.alwan@gmail.com" target="jundialwan__mailto">
               MAIL
             </a>
-          </LogoType>
+          </LogoType> */}
         </NavigationHeader>
+        <hr/>
+        
+        {/* <NavigationHeader>
+          <SiteMenu>
+            <Link href="/stories">
+              <a title="see all stories">
+                all stories
+              </a>
+            </Link>
+          </SiteMenu>
+        </NavigationHeader>
+        <hr/> */}
         <Component {...pageProps} />
       </GlobalContainer>
     </>
