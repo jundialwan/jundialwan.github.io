@@ -1,6 +1,7 @@
 // import App from 'next/app'
 import styled, { createGlobalStyle } from 'styled-components'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const size = {
   mobileS: '320px',
@@ -54,8 +55,22 @@ const GlobalContainer = styled.div({
   },
 
   [`@media ${device.laptop}`]: {
-    width: 'calc(50% - 32px)'
+    width: 'calc(50% - 32px)',
+    fontSize: '1.4rem',
+    lineHeight: '2.2rem'
   },
+})
+
+const NavigationHeader = styled.div({
+  display: 'flex',
+  flexDirection: 'row'
+})
+
+const LogoType = styled.div({
+  padding: '4px 8px',
+  backgroundColor: '#DDD',
+  fontWeight: 'bolder',
+  marginRight: '4px'
 })
 
 
@@ -68,6 +83,35 @@ function MyApp({ Component, pageProps }) {
         <title>jundialwan - Personal Blog</title>
       </Head>
       <GlobalContainer>
+        <NavigationHeader>
+          <LogoType>
+            <Link href="/">
+              <a title="back to home">
+                jundialwan
+              </a>
+            </Link>
+          </LogoType> 
+          <LogoType>
+            <a href="https://twitter.com/ja_alwan">
+              TW
+            </a>
+          </LogoType> 
+          <LogoType>
+            <a href="https://medium.com/jundialwan">
+              MD
+            </a>
+          </LogoType>
+          <LogoType>
+            <a href="https://github.com/jundialwan">
+              GH
+            </a>
+          </LogoType>
+          <LogoType>
+            <a href="mailto:jundi.alwan@gmail.com">
+              MAIL
+            </a>
+          </LogoType>
+        </NavigationHeader>
         <Component {...pageProps} />
       </GlobalContainer>
     </>

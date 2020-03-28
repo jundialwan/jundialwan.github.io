@@ -21,7 +21,7 @@ const MarkdownRender = styled.div({
 const Story: NextPage<{}> = () => {
   const router = useRouter()
   const selectedStory: string = router.query['story'] as string
-  const story = stories[selectedStory]
+  const story = stories.filter(s => s.url === selectedStory)[0]
   
   return (
     <>
