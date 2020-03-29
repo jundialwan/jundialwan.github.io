@@ -1,7 +1,4 @@
-﻿![cheers](https://drive.google.com/file/d/1pNhc8IWRkEaZPisKXM8d8heW7tOY2Lay/view?usp=sharing)
-*by Nathan Dumlao https://stocksnap.io/photo/V3RV70YNWK*
-
-What a great day!
+﻿What a great day!
 
 I just started bulid my own blog with my own domain. I'm using Medium for my main blogging platform until now but I think the paywall is rather annoying for the reader. I, then, decide to use my own website as a main blogging platform. It's all free and no paywall. Everyone can read 'em.
 
