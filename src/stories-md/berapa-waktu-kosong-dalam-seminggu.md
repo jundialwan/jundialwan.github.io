@@ -1,10 +1,10 @@
 Berdasarkan pengalaman saya dalam 3 tahun terakhir masa kuliah, saya sering mendengar statement dari beberapa teman saya bahwa mereka tidak punya waktu untuk melakukan suatu hal. Namun beberapa saat kemudian saya lihat bahwa teman saya tersebut melakukan suatu hal lainnya yang menurut penilaian saya tidak lebih penting dari dari hal yang mereka tolak untuk lakukan tadi, karena alasan sibuk.
 
-Tentunya saya pun pernah melakukan hal ini dan pastinya teman-teman saya pun pernah *spot on *hal ini. Saya rasa semua orang pernah berada pada dua sisi tersebut.
+Tentunya saya pun pernah melakukan hal ini dan pastinya teman-teman saya pun pernah **spot on** hal ini. Saya rasa semua orang pernah berada pada dua sisi tersebut.
 
 Jadi sebetulnya apa yang terjadi? Mengapa sering sekali kita merasa sibuk sehingga tidak bisa melakukan suatu hal?
 
-Kita perlu mulai dari asal mula bagaimana menilai suatu hal *worth *atau perlu dilakukan. Saya rasa kita semua pasti setuju bahwa manajemen waktu yang paling mudah kita lakukan adalah membuat daftar kegiatan/hal yang perlu kita lakukan lalu membuat peringkat prioritas dari daftar tersebut. Hal yang paling prioritas akan kita lakukan terlebih dahulu atau memakan waktu paling lama. Pertanyaan yang muncul adalah ‘Bagaimana sesorang menentukan prioritas suatu hal?’, ‘Apa yang mendasari hal tersebut menjadi prioritas?’. Saya rasa setiap orang pasti memiliki prioritas yang berbeda-beda terhadap suatu hal. Terkadang suatu hal kita anggap remeh dan memiliki prioritas rendah namun orang lain menganggap hal tersebut menjadi prioritas tretinggi bagi mereka.
+Kita perlu mulai dari asal mula bagaimana menilai suatu hal *worth* atau perlu dilakukan. Saya rasa kita semua pasti setuju bahwa manajemen waktu yang paling mudah kita lakukan adalah membuat daftar kegiatan/hal yang perlu kita lakukan lalu membuat peringkat prioritas dari daftar tersebut. Hal yang paling prioritas akan kita lakukan terlebih dahulu atau memakan waktu paling lama. Pertanyaan yang muncul adalah ‘Bagaimana sesorang menentukan prioritas suatu hal?’, ‘Apa yang mendasari hal tersebut menjadi prioritas?’. Saya rasa setiap orang pasti memiliki prioritas yang berbeda-beda terhadap suatu hal. Terkadang suatu hal kita anggap remeh dan memiliki prioritas rendah namun orang lain menganggap hal tersebut menjadi prioritas tretinggi bagi mereka.
 
 Prioritas adalah kata kuncinya.
 

@@ -9,7 +9,7 @@ const PageTitle = styled.h1({
   margin: '8px 0'
 })
 
-const StoryDate = styled.div({
+const StoryDate = styled.span({
   fontSize: '1rem',
   fontStyle: 'italic'
 })
@@ -18,16 +18,19 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
   return (
     <>
       <PageTitle>Latest story</PageTitle>
-      {
-        allStories.map(s => (
-          <div key={s.url}>
-            <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`}>
-              <a>{s.title}</a>
-            </Link>
-            <StoryDate>{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}</StoryDate>
-          </div>
-        ))
-      }
+      <ul style={{ paddingInlineStart: '20px'}}>
+        {
+          allStories.map(s => (
+            <li key={s.url} style={{marginBottom: '12px'}}>
+              <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`}>
+                <a>{s.title}</a>
+              </Link>
+              <br/>
+              <StoryDate>[{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}]</StoryDate>
+            </li>
+          ))
+        }
+      </ul>
     </>
   )
 }

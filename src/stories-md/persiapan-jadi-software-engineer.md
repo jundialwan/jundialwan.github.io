@@ -36,6 +36,6 @@ Harus bisa ngoding dan sudah pernah ngoding sesuatu **you don’t say. *Hampir s
 
 Menurut saya beberapa poin diatas merupakan poin-poin utama. Sisanya harusnya kalian bisa figure out sendiri lah ya. Buat yang mau interview jangan lupa dipersiapkan segala hal nya yah dan jangan lupa berusaha dan berdoa 🙂
 
-**UPDATE: **Terima kasih untuk teman-teman yang sudah membaca. Story ini merupakan story pertama saya di Medium dan sangat tidak disangka ternyata memiliki pembaca dan *clap *terbanyak sampai saat ini diantara story saya yang lainnya. Terima kasih semua. Semoga story ini dapat memberikan inspirasi ^^.
+**UPDATE: **Terima kasih untuk teman-teman yang sudah membaca. Story ini merupakan story pertama saya di Medium dan sangat tidak disangka ternyata memiliki pembaca dan *clap* terbanyak sampai saat ini diantara story saya yang lainnya. Terima kasih semua. Semoga story ini dapat memberikan inspirasi ^^.
 
 Belum lama ini saya menerbitkan story yang melanjutkan tips-tips saya pada artikel ini. Teman-teman bisa cek disini jika berkenan. [https://medium.com/@jundialwan/apa-lagi-yang-harus-disiapin-kalau-mau-jadi-software-engineer-8a027b05dfb5](https://medium.com/@jundialwan/apa-lagi-yang-harus-disiapin-kalau-mau-jadi-software-engineer-8a027b05dfb5)
