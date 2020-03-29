@@ -2,7 +2,7 @@
 
 I just started bulid my own blog with my own domain. I'm using Medium for my main blogging platform until now but I think the paywall is rather annoying for the reader. I, then, decide to use my own website as a main blogging platform. It's all free and no paywall. Everyone can read 'em.
 
-Unlike my old posts on Medium, I will write more diverse topics other than software engineering here. I do have a plan to start writing about my journey on this 3 years old startup I'm working on, or some things I learn, or my point of view regarding some topics. Maybe some Naruto-Boruto content too 🤔 *that would be interesting
+Unlike my old posts on Medium, I will write more diverse topics other than software engineering here. I do have a plan to start writing about my journey on my friends' startup I'm working on, or some things I learn, or my point of view regarding some topics. Maybe some Naruto-Boruto content too 🤔 *that would be interesting
 
 That short warm welcome would do, I think.
 

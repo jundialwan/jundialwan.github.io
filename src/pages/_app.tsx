@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import { NextPage } from 'next'
+import { GoogleAnalytics } from '../Utils'
 
 // configure progesrs bar on top off app
 NProgress.configure({ trickleSpeed: 50 })
@@ -16,8 +17,9 @@ Router.events.on('routeChangeStart', () => {
   NProgress.inc(.24)
 })
 
-Router.events.on('routeChangeComplete', () => {
+Router.events.on('routeChangeComplete', (url: string) => {
   NProgress.done()
+  GoogleAnalytics.pageView(url)
 })
 
 Router.events.on('routeChangeError', () => {
@@ -134,39 +136,8 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
               </a>
             </Link>
           </LogoType>
-          {/* <LogoType>
-            <a href="https://twitter.com/ja_alwan" target="jundialwan__twitter">
-              TW
-            </a>
-          </LogoType> 
-          <LogoType>
-            <a href="https://medium.com/@jundialwan" target="jundialwan__medium">
-              MD
-            </a>
-          </LogoType>
-          <LogoType>
-            <a href="https://github.com/jundialwan" target="jundialwan__github"> 
-              GH
-            </a>
-          </LogoType>
-          <LogoType>
-            <a href="mailto:jundi.alwan@gmail.com" target="jundialwan__mailto">
-              MAIL
-            </a>
-          </LogoType> */}
         </NavigationHeader>
         <hr/>
-        
-        {/* <NavigationHeader>
-          <SiteMenu>
-            <Link href="/stories">
-              <a title="see all stories">
-                all stories
-              </a>
-            </Link>
-          </SiteMenu>
-        </NavigationHeader>
-        <hr/> */}
         <Component {...pageProps} />
       </GlobalContainer>
     </>

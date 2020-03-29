@@ -43,10 +43,10 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
         {
           story === undefined ?
           (
-            <title>Story not found</title>
+            <title>Story not found - jundialwan</title>
           ):
           (
-            <title>{story.title}</title>
+            <title>{story.title} - jundialwan</title>
           )
         }
       </Head>

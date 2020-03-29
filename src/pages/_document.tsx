@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import { GoogleAnalytics } from '../Utils'
 
 class MyDocument extends Document<{ styles?: any }> {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -32,6 +33,24 @@ class MyDocument extends Document<{ styles?: any }> {
       <Html>
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
+
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GoogleAnalytics.TRACKING_ID}`}
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GoogleAnalytics.TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         </Head>
         <body>
           <Main />
