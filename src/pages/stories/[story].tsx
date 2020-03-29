@@ -1,9 +1,8 @@
-import { useRouter } from 'next/router'
+import { BlogJsonLd } from 'next-seo'
 import ReactMarkdown from 'react-markdown'
 import stories, { Story } from '../../stories-md'
 import { NextPage, NextPageContext } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import styled from 'styled-components'
 import { formatDate } from '../../Utils'
 
@@ -57,11 +56,21 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
         ) :
         (
           <>
+            <BlogJsonLd 
+              url={`https://jundialwan.id/stories/${story.url}`}
+              title={story.title}
+              datePublished={typeof window !== 'undefined' ? (story.createdAt).toString() : (new Date(story.createdAt)).toString()}
+              dateModified={typeof window !== 'undefined' ? (story.updatedAt).toString() : (new Date(story.updatedAt)).toString()}
+              description={story.description}
+              authorName="Jundi Alwan"
+              images={[]}
+            />
+            
             <StoryTitle>
               {story.title}
             </StoryTitle>
             <StoryDate>
-              {formatDate(typeof window === 'undefined' ? story.createdAt : new Date(story.createdAt) )}
+              {formatDate(typeof window === 'undefined' ? story.createdAt : new Date(story.createdAt))}
             </StoryDate>
             <StoryBody>
               <ReactMarkdown escapeHtml={true} source={story.md}/>
