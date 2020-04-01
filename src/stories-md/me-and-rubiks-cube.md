@@ -117,3 +117,4 @@ I realized that the community, the people, that hooked so bad into Rubik's cube 
 
 I will never forget the community. Like I never forget a hundreds of algorithm of Rubik's cube I've ever memorized.
 
+![](https://res.cloudinary.com/jundialwan/image/upload/v1585764014/FB_IMG_1579882471350_mojjle.jpg)
