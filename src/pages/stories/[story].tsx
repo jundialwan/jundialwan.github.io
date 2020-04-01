@@ -5,6 +5,7 @@ import { NextPage, NextPageContext } from 'next'
 import Head from 'next/head'
 import styled from 'styled-components'
 import { formatDate } from '../../Utils'
+import Link from 'next/link'
 
 const StoryBody = styled.div({
   '& pre': {
@@ -33,9 +34,8 @@ const StoryDate = styled.span({
 })
 
 const BackToTopNav = styled.div({
-  float: 'right',
   padding: '16px',
-  textAlign: 'right'
+  textAlign: 'center'
 })
 
 const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
@@ -81,9 +81,11 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
             </StoryBody>
 
             <BackToTopNav>
-              <a href="#top" title="back to top">
-                ^ back to top
-              </a>
+              <Link href="/">
+                <a title="back to home">
+                  &lt;&lt; back to home 🏠
+                </a>
+              </Link>
             </BackToTopNav>
           </>
         )
