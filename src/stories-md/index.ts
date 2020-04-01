@@ -37,6 +37,15 @@ const stories: Story[] = [
     updatedAt: new Date('2017-03-06'),
     tags: ['life', 'time'],
     md: require('../stories-md/berapa-waktu-kosong-dalam-seminggu.md').default
+  },
+  {
+    title: `Me and Rubik's Cube`,
+    description: 'Me with the most popular puzzles of all time',
+    url: 'me-and-rubiks-cube',
+    createdAt: new Date('2020-04-02'),
+    updatedAt: new Date('2020-04-02'),
+    tags: ['life', 'rubiks'],
+    md: require('../stories-md/me-and-rubiks-cube.md').default
   }
 ]
 

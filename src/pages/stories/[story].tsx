@@ -15,6 +15,10 @@ const StoryBody = styled.div({
     '& code': {
       whiteSpace: 'pre-wrap'
     } 
+  },
+
+  '& img': {
+    width: '100%'
   }
 })
 
