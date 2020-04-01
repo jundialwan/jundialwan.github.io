@@ -33,7 +33,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
       <GlobalStyle />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jundialwan - Personal Blog</title>
+        <title>jundialwan - Personal Blog. Product and Tech.</title>
       </Head>
       <DefaultSeo
         openGraph={{
@@ -45,8 +45,11 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
         twitter={{
           handle: '@ja_alwan',
           site: '@ja_alwan',
-          cardType: 'summary',
+          cardType: 'summary'
         }}
+        description="Personal blog by Jundi Alwan. I write about tech, product, startup. Still learning."
+        canonical="https://jundialwan.id"
+        title="jundialwan - Personal blog. Product and Tech."
       />
       <div id="top"></div>
       <GlobalContainer>
