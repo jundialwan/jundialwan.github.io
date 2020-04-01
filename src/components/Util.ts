@@ -22,13 +22,14 @@ export const GlobalContainer = styled.div({
   
   [`@media ${MediaQuery.device.mobileS}`]: {
     width: 'calc(100% - 32px)',
-    fontSize: '1rem'
+    fontSize: '1rem',
+    lineHeight: '1.8rem'
   },
 
   [`@media ${MediaQuery.device.mobileM}`]: {
     width: 'calc(100% - 32px)',
-    fontSize: '1.4rem',
-    lineHeight: '2.6rem'
+    fontSize: '1.6rem',
+    lineHeight: '3rem'
   },
 
   [`@media ${MediaQuery.device.laptop}`]: {
