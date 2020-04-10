@@ -28,15 +28,9 @@ export const GlobalContainer = styled.div({
 
   [`@media ${MediaQuery.device.mobileM}`]: {
     width: 'calc(100% - 32px)',
-    fontSize: '1.6rem',
-    lineHeight: '3rem'
-  },
-
-  [`@media ${MediaQuery.device.laptop}`]: {
-    width: 'calc(50% - 32px)',
     fontSize: '1.4rem',
     lineHeight: '2.2rem'
-  },
+  }
 })
 
 export const NavigationHeader = styled.div({
