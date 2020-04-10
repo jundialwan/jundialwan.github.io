@@ -30,7 +30,11 @@ export const GlobalContainer = styled.div({
     width: 'calc(100% - 32px)',
     fontSize: '1.4rem',
     lineHeight: '2.2rem'
-  }
+  },
+
+  [`@media ${MediaQuery.device.laptop}`]: {
+    width: 'calc(50% - 32px)'
+  },
 })
 
 export const NavigationHeader = styled.div({
