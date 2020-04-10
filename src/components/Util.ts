@@ -28,12 +28,14 @@ export const GlobalContainer = styled.div({
 
   [`@media ${MediaQuery.device.mobileM}`]: {
     width: 'calc(100% - 32px)',
-    fontSize: '1.4rem',
+    fontSize: '1rem',
     lineHeight: '2.2rem'
   },
 
   [`@media ${MediaQuery.device.laptop}`]: {
-    width: 'calc(50% - 32px)'
+    width: 'calc(50% - 32px)',
+    fontSize: '1.4rem',
+    lineHeight: '2.4rem'
   },
 })
 
@@ -45,6 +47,7 @@ export const NavigationHeader = styled.div({
 export const LogoType = styled.div({
   padding: '4px 8px',
   backgroundColor: '#DDD',
+  fontSize: '1rem',
   fontWeight: 'bolder',
   marginRight: '4px',
   display: 'flex',

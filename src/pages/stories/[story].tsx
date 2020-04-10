@@ -24,12 +24,12 @@ const StoryBody = styled.div({
 })
 
 const StoryTitle = styled.h1({
-  fontSize: '2.2rem',
+  fontSize: '1.4em',
   margin: '8px 0'
 })
 
 const StoryDate = styled.span({
-  fontSize: '1.2rem',
+  fontSize: '0.8rem',
   fontStyle: 'italic'
 })
 

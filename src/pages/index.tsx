@@ -10,7 +10,7 @@ const PageTitle = styled.h1({
 })
 
 const StoryDate = styled.span({
-  fontSize: '1rem',
+  fontSize: '.72rem',
   fontStyle: 'italic'
 })
 
@@ -25,8 +25,8 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
               <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`}>
                 <a>{s.title}</a>
               </Link>
-              <br/>
-              <StoryDate>[{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}]</StoryDate>
+              &nbsp;&nbsp;
+              <StoryDate>{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}</StoryDate>
             </li>
           ))
         }
