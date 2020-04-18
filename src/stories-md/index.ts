@@ -46,6 +46,24 @@ const stories: Story[] = [
     updatedAt: new Date('2020-04-02'),
     tags: ['life', 'rubiks'],
     md: require('../stories-md/me-and-rubiks-cube.md').default
+  },
+  {
+    title: `Pahlawan Kertas 📜`,
+    description: 'Sebuah puisi. Pahlawan kertas.',
+    url: 'pahlawan-kertas',
+    createdAt: new Date('2017-06-13'),
+    updatedAt: new Date('2017-06-13'),
+    tags: ['life', 'poems', 'poetry'],
+    md: require('../stories-md/pahlawan-kertas.md').default
+  },
+  {
+    title: `Mesin Waktu 📜`,
+    description: 'Sebuah puisi. Mesin Waktu',
+    url: 'mesin-waktu',
+    createdAt: new Date('2017-07-15'),
+    updatedAt: new Date('2017-07-15'),
+    tags: ['life', 'poems', 'poetry'],
+    md: require('../stories-md/mesin-waktu.md').default
   }
 ]
 
