@@ -7,36 +7,46 @@ import styled from 'styled-components'
 import { formatDate } from '../../Utils'
 import Link from 'next/link'
 
-const StoryBody = styled.div({
-  '& pre': {
-    border: '1px solid #000',
-    padding: '16px',
-    backgroundColor: '#fff111',
+const StoryBody = styled.div`
+  color: #000;
+  & pre {
+    border: 1px solid #000;
+    padding: 16px;
+    background-color: #fff111;
 
-    '& code': {
-      whiteSpace: 'pre-wrap'
+    & code {
+      white-space: pre-wrap;
     } 
-  },
-
-  '& img': {
-    width: '100%'
   }
-})
 
-const StoryTitle = styled.h1({
-  fontSize: '1.4em',
-  margin: '8px 0'
-})
+  & img {
+    width: 100%;
+  }
+`
 
-const StoryDate = styled.span({
-  fontSize: '0.8rem',
-  fontStyle: 'italic'
-})
+const StoryTitle = styled.span`
+  font-size: 1.4em;
+  margin: 8px 0;
+  font-weight: 900;
+`
 
-const BackToTopNav = styled.div({
-  padding: '16px',
-  textAlign: 'center'
-})
+const StoryDate = styled.span`
+  font-size: smaller;
+  color: #586069;
+`
+
+const BackToTopNav = styled.div`
+  width: fit-content;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d5da;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+
+  & a {
+    text-decoration: none;
+  }
+`
 
 const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
   
@@ -73,20 +83,21 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
             <StoryTitle>
               {story.title}
             </StoryTitle>
+            <br/>
             <StoryDate>
               {formatDate(typeof window === 'undefined' ? story.createdAt : new Date(story.createdAt))}
             </StoryDate>
             <StoryBody>
-              <ReactMarkdown escapeHtml={true} source={story.md}/>
+              <ReactMarkdown escapeHtml={false} source={story.md}/>
             </StoryBody>
 
-            <BackToTopNav>
-              <Link href="/">
+            <Link href="/" passHref>
+              <BackToTopNav>
                 <a title="back to home">
                   &lt;&lt; back to home 🏠
                 </a>
-              </Link>
-            </BackToTopNav>
+              </BackToTopNav>
+            </Link>
           </>
         )
       }

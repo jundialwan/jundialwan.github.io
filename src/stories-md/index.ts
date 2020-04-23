@@ -13,7 +13,7 @@ const stories: Story[] = [
   },
   {
     title: 'Apa yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
-    description: 'Perkembangan dunia software engineering berimbas pada kriteria software engineer yang dibutuhkan. Apa saja yang dibutuhkan untuk jadi software engineer saat ini?',
+    description: 'Apa saja kriteria yang dibutuhkan untuk jadi software engineer saat ini?',
     url: 'persiapan-jadi-software-engineer',
     createdAt: new Date('2017-01-18'),
     updatedAt: new Date('2017-01-18'),
@@ -22,7 +22,7 @@ const stories: Story[] = [
   },
   {
     title: 'Apa Lagi yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
-    description: 'Diperlukan beberapa persiapan dalam memulai karir sebagai software engineer. Berdasarkan pengalaman saya, berikut adalah beberapa diantaranya.',
+    description: 'Beberapa persiapan dalam memulai karir sebagai software engineer. Berikut adalah beberapa diantaranya.',
     url: 'persiapan-jadi-software-engineer-2',
     createdAt: new Date('2019-10-17'),
     updatedAt: new Date('2019-10-17'),
@@ -31,7 +31,7 @@ const stories: Story[] = [
   },
   {
     title: 'Berapa Waktu Kosong Yang Sebetulnya Kita Punya Dalam Satu Minggu?',
-    description: 'Waktu memang terasa cepat kalau dilalui dengan hal yang tidak penting. Dalam satu minggu banyak waktu yang sebetulnya dapat kita manfaatkan dengan baik untuk berkembang.',
+    description: 'Dalam satu minggu banyak waktu yang sebetulnya dapat kita manfaatkan dengan baik untuk berkembang.',
     url: 'berapa-waktu-kosong-dalam-satu-minggu',
     createdAt: new Date('2017-03-06'),
     updatedAt: new Date('2017-03-06'),

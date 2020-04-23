@@ -4,15 +4,25 @@ import { formatDate } from '../Utils'
 import { NextPage, NextPageContext } from 'next'
 import styled from 'styled-components'
 
-const PageTitle = styled.h1({
-  fontSize: '1.6rem',
-  margin: '8px 0'
-})
+const PageTitle = styled.h1`
+  font-size: larger;
+  font-weight: 900;
+  margin: 8px 0;
+`
 
-const StoryDate = styled.span({
-  fontSize: '.72rem',
-  fontStyle: 'italic'
-})
+const StoryDate = styled.span`
+  font-size: smaller;
+  color: #586069;
+`
+
+const StoryLink = styled.span`
+  font-weight: 900;
+  cursor: pointer;
+`
+const StoryTeaser = styled.span`
+  color: #586069;
+  font-size: smaller;
+`
 
 const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
   return (
@@ -21,13 +31,15 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
       <ul style={{ paddingInlineStart: '20px'}}>
         {
           allStories.map(s => (
-            <li key={s.url} style={{marginBottom: '12px'}}>
-              <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`}>
-                <a>{s.title}</a>
-              </Link>
-              &nbsp;&nbsp;
-              <StoryDate>{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}</StoryDate>
-            </li>
+            <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`} passHref>
+              <li key={s.url} style={{marginBottom: '12px'}}>
+                <StoryLink>{s.title}</StoryLink>
+                &nbsp;&nbsp;
+                <StoryDate>{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}</StoryDate>
+                <br/>
+                <StoryTeaser>{s.description} </StoryTeaser>
+              </li>
+            </Link>
           ))
         }
       </ul>
