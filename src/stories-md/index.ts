@@ -64,6 +64,15 @@ const stories: Story[] = [
     updatedAt: new Date('2017-07-15'),
     tags: ['life', 'poems', 'poetry'],
     md: require('../stories-md/mesin-waktu.md').default
+  },
+  {
+    title: `Run Alone or Run Together?`,
+    description: 'A famous Zambian Provers make me thinking',
+    url: 'run-alone-or-run-together',
+    createdAt: new Date('2020-04-26'),
+    updatedAt: new Date('2020-04-26'),
+    tags: ['life', 'refelctive', 'proverb'],
+    md: require('../stories-md/run-alone-or-run-together.md').default
   }
 ]
 
