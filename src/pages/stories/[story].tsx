@@ -36,6 +36,7 @@ const StoryDate = styled.span`
 `
 
 const BackToTopNav = styled.div`
+  cursor: pointer;
   width: fit-content;
   background-color: #f6f8fa;
   border: 1px solid #d1d5da;

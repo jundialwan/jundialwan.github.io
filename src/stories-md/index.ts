@@ -1,7 +1,7 @@
 const stories: Story[] = [
   {
     title: 'Welcome to this blog',
-    description: 'Warm welcome from me. New blogging platform, a fresh start.',
+    description: 'New blogging platform, a fresh start.',
     url: 'welcome-to-this-blog',
     createdAt: new Date('2020-03-28'),
     updatedAt: new Date('2020-03-28'),
@@ -13,7 +13,7 @@ const stories: Story[] = [
   },
   {
     title: 'Apa yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
-    description: 'Apa saja kriteria yang dibutuhkan untuk jadi software engineer saat ini?',
+    description: 'Kriteria dasar yang dibutuhkan software engineer saat ini.',
     url: 'persiapan-jadi-software-engineer',
     createdAt: new Date('2017-01-18'),
     updatedAt: new Date('2017-01-18'),
@@ -22,21 +22,12 @@ const stories: Story[] = [
   },
   {
     title: 'Apa Lagi yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
-    description: 'Beberapa persiapan dalam memulai karir sebagai software engineer. Berikut adalah beberapa diantaranya.',
+    description: 'Persiapan karir sebagai software engineer.',
     url: 'persiapan-jadi-software-engineer-2',
     createdAt: new Date('2019-10-17'),
     updatedAt: new Date('2019-10-17'),
     tags: ['software engineer'],
     md: require('../stories-md/persiapan-jadi-software-engineer-2.md').default
-  },
-  {
-    title: 'Berapa Waktu Kosong Yang Sebetulnya Kita Punya Dalam Satu Minggu?',
-    description: 'Dalam satu minggu banyak waktu yang sebetulnya dapat kita manfaatkan dengan baik untuk berkembang.',
-    url: 'berapa-waktu-kosong-dalam-satu-minggu',
-    createdAt: new Date('2017-03-06'),
-    updatedAt: new Date('2017-03-06'),
-    tags: ['life', 'time'],
-    md: require('../stories-md/berapa-waktu-kosong-dalam-seminggu.md').default
   },
   {
     title: `Me and Rubik's Cube`,
@@ -49,7 +40,7 @@ const stories: Story[] = [
   },
   {
     title: `Pahlawan Kertas 📜`,
-    description: 'Berpakaian elok tujuh warna. Bersematkan ijab di punggungnya.',
+    description: 'Berpakaian elok. Bersematkan ijab di punggungnya.',
     url: 'pahlawan-kertas',
     createdAt: new Date('2017-06-13'),
     updatedAt: new Date('2017-06-13'),
@@ -58,7 +49,7 @@ const stories: Story[] = [
   },
   {
     title: `Mesin Waktu 📜`,
-    description: 'Andai saja waktu pandai bicara. Ku kan bicara pada waktu.',
+    description: 'Andai waktu pandai bicara.',
     url: 'mesin-waktu',
     createdAt: new Date('2017-07-15'),
     updatedAt: new Date('2017-07-15'),

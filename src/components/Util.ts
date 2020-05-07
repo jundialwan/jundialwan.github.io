@@ -2,8 +2,10 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { MediaQuery } from '../Utils'
 
 export const GlobalStyle = createGlobalStyle`
-  html: {
+  html {
     width: 100%;
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   body {
@@ -23,20 +25,20 @@ export const GlobalContainer = styled.div`
   
   ${`@media ${MediaQuery.device.mobileS}`} {
     width: calc(100% - 32px);
-    font-size: 1rem;
-    line-height: 1.5;
+    /* font-size: 1rem;
+    line-height: 1.6; */
   }
 
   ${`@media ${MediaQuery.device.mobileM}`} {
     width: calc(100% - 32px);
-    font-size: 1rem;
-    line-height: 1.5;
+    /* font-size: 1rem;
+    line-height: 1.6; */
   }
 
   ${`@media ${MediaQuery.device.laptop}`} {
     width: calc(50% - 32px);
-    font-size: 1rem;
-    line-height: 1.5;
+    /* font-size: 1rem;
+    line-height: 1.6; */
   }
 `
 
