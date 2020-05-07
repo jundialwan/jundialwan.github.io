@@ -30,7 +30,7 @@ class MyDocument extends Document<{ styles?: any }> {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet"></link>
 
