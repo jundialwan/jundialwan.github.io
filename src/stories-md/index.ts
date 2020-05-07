@@ -49,7 +49,7 @@ const stories: Story[] = [
   },
   {
     title: `Pahlawan Kertas 📜`,
-    description: 'Sebuah puisi. Pahlawan kertas.',
+    description: 'Berpakaian elok tujuh warna. Bersematkan ijab di punggungnya.',
     url: 'pahlawan-kertas',
     createdAt: new Date('2017-06-13'),
     updatedAt: new Date('2017-06-13'),
@@ -58,7 +58,7 @@ const stories: Story[] = [
   },
   {
     title: `Mesin Waktu 📜`,
-    description: 'Sebuah puisi. Mesin Waktu',
+    description: 'Andai saja waktu pandai bicara. Ku kan bicara pada waktu.',
     url: 'mesin-waktu',
     createdAt: new Date('2017-07-15'),
     updatedAt: new Date('2017-07-15'),
@@ -73,7 +73,16 @@ const stories: Story[] = [
     updatedAt: new Date('2020-04-26'),
     tags: ['life', 'refelctive', 'proverb'],
     md: require('../stories-md/run-alone-or-run-together.md').default
-  }
+  },
+  {
+    title: `Kala Langit Masih Tidur 📜`,
+    description: 'Pukul sembilan. Langit masih tidur.',
+    url: 'kala-langit-masih-tidur',
+    createdAt: new Date('2020-05-04'),
+    updatedAt: new Date('2020-05-04'),
+    tags: ['life', 'poems', 'poetry'],
+    md: require('../stories-md/kala-langit-masih-tidur.md').default
+  },
 ]
 
 export default stories
