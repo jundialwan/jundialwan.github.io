@@ -1,11 +1,12 @@
 import { BlogJsonLd } from 'next-seo'
 import ReactMarkdown from 'react-markdown'
 import stories, { Story } from '../../stories-md'
-import { NextPage, NextPageContext } from 'next'
+import { NextPage, NextPageContext, GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
 import styled from 'styled-components'
 import { formatDate } from '../../Utils'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const StoryBody = styled.div`
   color: #000;
@@ -50,12 +51,13 @@ const BackToTopNav = styled.div`
 `
 
 const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
-  
+  const router = useRouter()
+
   return (
     <>
       <Head>
         {
-          story === undefined ?
+          !router.isFallback && story === undefined ?
           (
             <title>Story not found - jundialwan</title>
           ):
@@ -65,41 +67,44 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
         }
       </Head>
       {
-        story === undefined ?
+        !router.isFallback && story === undefined ?
         (
           <div>Story not found</div>
         ) :
         (
-          <>
-            <BlogJsonLd 
-              url={`https://jundialwan.id/stories/${story.url}`}
-              title={story.title}
-              datePublished={typeof window !== 'undefined' ? (story.createdAt).toString() : (new Date(story.createdAt)).toString()}
-              dateModified={typeof window !== 'undefined' ? (story.updatedAt).toString() : (new Date(story.updatedAt)).toString()}
-              description={story.description}
-              authorName="Jundi Alwan"
-              images={[]}
-            />
-            
-            <StoryTitle>
-              {story.title}
-            </StoryTitle>
-            <br/>
-            <StoryDate>
-              {formatDate(typeof window === 'undefined' ? story.createdAt : new Date(story.createdAt))}
-            </StoryDate>
-            <StoryBody>
-              <ReactMarkdown escapeHtml={false} source={story.md}/>
-            </StoryBody>
+          router.isFallback ?
+            <div>Loading...</div>
+            :
+            <>
+              <BlogJsonLd 
+                url={`https://jundialwan.id/stories/${story.url}`}
+                title={story.title}
+                datePublished={(new Date(story.createdAt)).toString()}
+                dateModified={(new Date(story.updatedAt)).toString()}
+                description={story.description}
+                authorName="Jundi Alwan"
+                images={[]}
+              />
+              
+              <StoryTitle>
+                {story.title}
+              </StoryTitle>
+              <br/>
+              <StoryDate>
+                {formatDate(new Date(story.createdAt))}
+              </StoryDate>
+              <StoryBody>
+                <ReactMarkdown escapeHtml={false} source={story.md}/>
+              </StoryBody>
 
-            <Link href="/" passHref>
-              <BackToTopNav>
-                <a title="back to home">
-                  &lt;&lt; back to home 🏠
-                </a>
-              </BackToTopNav>
-            </Link>
-          </>
+              <Link href="/" passHref>
+                <BackToTopNav>
+                  <a title="back to home">
+                    &lt;&lt; back to home 🏠
+                  </a>
+                </BackToTopNav>
+              </Link>
+            </>
         )
       }
       
@@ -107,12 +112,25 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
   )
 }
 
-StoryPage.getInitialProps = async (ctx: NextPageContext) => {
-  const story = ctx.query['story'] as string
-  const selectedStory = stories.filter(f => f.url === story)[0]
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const story = params?.story as string
+  let selectedStory
+
+  if (story) {
+    selectedStory = stories.filter(f => f.url === story)[0]
+  }
 
   return {
-    story: selectedStory
+    props: {
+      story: selectedStory
+    }
+  }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: stories.map(s => ({ params: { story: s.url } })),
+    fallback: false
   }
 }
 

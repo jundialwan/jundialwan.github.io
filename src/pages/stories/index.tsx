@@ -1,7 +1,7 @@
 import stories, { Story } from '../../stories-md'
 import Link from 'next/link'
 import { formatDate } from '../../Utils'
-import { NextPage, NextPageContext } from 'next'
+import { NextPage, NextPageContext, GetServerSideProps } from 'next'
 
 const Stories: NextPage<{ allStories: Story[] }> = ({ allStories }) => {
   return (
@@ -16,7 +16,7 @@ const Stories: NextPage<{ allStories: Story[] }> = ({ allStories }) => {
                 <Link href="/stories/[story]" as={`/stories/${story.url}`}>
                   <a>{story.title}</a>
                 </Link><br/>
-                <span>{typeof window === 'undefined' ? formatDate(story.createdAt) : formatDate(new Date(story.createdAt))}</span>
+                <span>{formatDate(new Date(story.createdAt))}</span>
               </li>
             )
           })
@@ -26,9 +26,11 @@ const Stories: NextPage<{ allStories: Story[] }> = ({ allStories }) => {
   )
 }
 
-Stories.getInitialProps = async (ctx: NextPageContext) => {
+export const getServerSideProps: GetServerSideProps = async () => {
   return {
-    allStories: stories
+    props: {
+      allStories: stories
+    }
   }
 }
 

@@ -3,8 +3,8 @@ const stories: Story[] = [
     title: 'Welcome to this blog',
     description: 'New blogging platform, a fresh start.',
     url: 'welcome-to-this-blog',
-    createdAt: new Date('2020-03-28'),
-    updatedAt: new Date('2020-03-28'),
+    createdAt: '2020-03-28',
+    updatedAt: '2020-03-28',
     tags: [
       'welcome',
       'story'
@@ -15,8 +15,8 @@ const stories: Story[] = [
     title: 'Apa yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
     description: 'Kriteria dasar yang dibutuhkan software engineer saat ini.',
     url: 'persiapan-jadi-software-engineer',
-    createdAt: new Date('2017-01-18'),
-    updatedAt: new Date('2017-01-18'),
+    createdAt: '2017-01-18',
+    updatedAt: '2017-01-18',
     tags: ['software engineer'],
     md: require('../stories-md/persiapan-jadi-software-engineer.md').default
   },
@@ -24,8 +24,8 @@ const stories: Story[] = [
     title: 'Apa Lagi yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
     description: 'Persiapan karir sebagai software engineer.',
     url: 'persiapan-jadi-software-engineer-2',
-    createdAt: new Date('2019-10-17'),
-    updatedAt: new Date('2019-10-17'),
+    createdAt: '2019-10-17',
+    updatedAt: '2019-10-17',
     tags: ['software engineer'],
     md: require('../stories-md/persiapan-jadi-software-engineer-2.md').default
   },
@@ -33,8 +33,8 @@ const stories: Story[] = [
     title: `Me and Rubik's Cube`,
     description: 'Me with the most popular puzzles of all time',
     url: 'me-and-rubiks-cube',
-    createdAt: new Date('2020-04-02'),
-    updatedAt: new Date('2020-04-02'),
+    createdAt: '2020-04-02',
+    updatedAt: '2020-04-02',
     tags: ['life', 'rubiks'],
     md: require('../stories-md/me-and-rubiks-cube.md').default
   },
@@ -42,8 +42,8 @@ const stories: Story[] = [
     title: `Pahlawan Kertas 📜`,
     description: 'Berpakaian elok. Bersematkan ijab di punggungnya.',
     url: 'pahlawan-kertas',
-    createdAt: new Date('2017-06-13'),
-    updatedAt: new Date('2017-06-13'),
+    createdAt: '2017-06-13',
+    updatedAt: '2017-06-13',
     tags: ['life', 'poems', 'poetry'],
     md: require('../stories-md/pahlawan-kertas.md').default
   },
@@ -51,8 +51,8 @@ const stories: Story[] = [
     title: `Mesin Waktu 📜`,
     description: 'Andai waktu pandai bicara.',
     url: 'mesin-waktu',
-    createdAt: new Date('2017-07-15'),
-    updatedAt: new Date('2017-07-15'),
+    createdAt: '2017-07-15',
+    updatedAt: '2017-07-15',
     tags: ['life', 'poems', 'poetry'],
     md: require('../stories-md/mesin-waktu.md').default
   },
@@ -60,8 +60,8 @@ const stories: Story[] = [
     title: `Run Alone or Run Together?`,
     description: 'A famous Zambian Provers make me thinking',
     url: 'run-alone-or-run-together',
-    createdAt: new Date('2020-04-26'),
-    updatedAt: new Date('2020-04-26'),
+    createdAt: '2020-04-26',
+    updatedAt: '2020-04-26',
     tags: ['life', 'refelctive', 'proverb'],
     md: require('../stories-md/run-alone-or-run-together.md').default
   },
@@ -69,8 +69,8 @@ const stories: Story[] = [
     title: `Kala Langit Masih Tidur 📜`,
     description: 'Pukul sembilan. Langit masih tidur.',
     url: 'kala-langit-masih-tidur',
-    createdAt: new Date('2020-05-04'),
-    updatedAt: new Date('2020-05-04'),
+    createdAt: '2020-05-04',
+    updatedAt: '2020-05-04',
     tags: ['life', 'poems', 'poetry'],
     md: require('../stories-md/kala-langit-masih-tidur.md').default
   },
@@ -82,8 +82,8 @@ export type Story = {
   title: string,
   description: string,
   url: string,
-  createdAt: Date,
-  updatedAt: Date,
+  createdAt: string,
+  updatedAt: string,
   tags: string[],
   md: string
 }

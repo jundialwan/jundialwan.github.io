@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import stories, { Story } from '../stories-md'
 import { formatDate } from '../Utils'
-import { NextPage, NextPageContext } from 'next'
+import { NextPage, NextPageContext, GetServerSideProps } from 'next'
 import styled from 'styled-components'
 
 const PageTitle = styled.h1`
@@ -35,7 +35,7 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
               <li key={s.url} style={{marginBottom: '12px'}}>
                 <StoryLink>{s.title}</StoryLink>
                 &nbsp;&nbsp;
-                <StoryDate>{typeof window === 'undefined' ? formatDate(s.createdAt) : formatDate(new Date(s.createdAt))}</StoryDate>
+                <StoryDate>{formatDate(new Date(s.createdAt))}</StoryDate>
                 <br/>
                 <StoryTeaser>{s.description} </StoryTeaser>
               </li>
@@ -47,20 +47,19 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
   )
 }
 
-Home.getInitialProps = async (ctx: NextPageContext) => {
-  const sortedLatestStories = stories.sort((s1, s2) => {
-    let story1 = s1.createdAt
-    let story2 = s2.createdAt
-
-    if (typeof window !== 'undefined') {
-      story1 = new Date(s1.createdAt)
-      story2 = new Date(s2.createdAt)
-    }
+export const getServerSideProps: GetServerSideProps = async () => {
+  const sortedLatestStories = stories.sort((s1, s2) => {    
+    const story1 = new Date(s1.createdAt)
+    const story2 = new Date(s2.createdAt)
 
     return -1 * (story1.getTime() - story2.getTime())
   })
 
-  return { allStories: sortedLatestStories }
+  return {
+    props: {
+      allStories: sortedLatestStories
+    }
+  }
 }
 
 export default Home
