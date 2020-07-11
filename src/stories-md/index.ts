@@ -9,7 +9,8 @@ const stories: Story[] = [
       'welcome',
       'story'
     ],
-    md: require('../stories-md/welcome.md').default
+    md: require('../stories-md/welcome.md').default,
+    priority: 0.6
   },
   {
     title: `It Is How Good You Want To Be`,
@@ -72,7 +73,8 @@ const stories: Story[] = [
     createdAt: '2020-04-26',
     updatedAt: '2020-04-26',
     tags: ['life', 'reflection', 'proverb'],
-    md: require('../stories-md/run-alone-or-run-together.md').default
+    md: require('../stories-md/run-alone-or-run-together.md').default,
+    priority: 0.6
   },
   {
     title: `Kala Langit Masih Tidur 📜`,
@@ -81,7 +83,8 @@ const stories: Story[] = [
     createdAt: '2020-05-04',
     updatedAt: '2020-05-04',
     tags: ['life', 'poems', 'poetry'],
-    md: require('../stories-md/kala-langit-masih-tidur.md').default
+    md: require('../stories-md/kala-langit-masih-tidur.md').default,
+    priority: 0.6
   },
 ]
 
@@ -94,5 +97,6 @@ export type Story = {
   createdAt: string,
   updatedAt: string,
   tags: string[],
-  md: string
+  md: string,
+  priority?: number
 }
