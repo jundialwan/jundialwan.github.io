@@ -64,6 +64,8 @@ class MyDocument extends Document<{ styles?: any }> {
         <body>
           <Main />
           <NextScript />
+
+          <SchemaOrg />
         </body>
       </Html>
     )
@@ -71,3 +73,24 @@ class MyDocument extends Document<{ styles?: any }> {
 }
 
 export default MyDocument
+
+export const SchemaOrg = () => {
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "jundialwan",
+    "url": "https://jundialwan.id",
+    "address": "Indonesia",
+    "sameAs": [
+      "https://twitter.com/ja_alwan",
+      "https://www.linkedin.com/in/jundialwan/"
+    ]
+  }
+
+  return (
+    <script 
+      type="appplication/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}

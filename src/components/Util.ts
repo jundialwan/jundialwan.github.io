@@ -24,6 +24,10 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3 {
     font-weight: 700;
   }
+
+  ::selection {
+    background-color: lightpink;
+  }
 `
 
 export const GlobalContainer = styled.div`
