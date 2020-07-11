@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const PageTitle = styled.h1`
   font-size: larger;
-  font-weight: 900;
+  font-weight: 600;
   margin: 8px 0;
 `
 
@@ -16,7 +16,7 @@ const StoryDate = styled.span`
 `
 
 const StoryLink = styled.span`
-  font-weight: 900;
+  font-weight: 600;
   cursor: pointer;
 `
 const StoryTeaser = styled.span`

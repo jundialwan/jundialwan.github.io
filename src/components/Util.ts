@@ -16,6 +16,14 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     width: 100%;
   }
+
+  strong {
+    font-weight: 600;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
 `
 
 export const GlobalContainer = styled.div`
@@ -51,7 +59,7 @@ export const LogoType = styled.div`
   padding: 4px 8px;
   background-color: #dfe2e5;
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 400;
   margin-right: 4px;
   display: flex;
   flex-direction: row;

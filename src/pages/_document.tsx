@@ -32,7 +32,7 @@ class MyDocument extends Document<{ styles?: any }> {
     return (
       <Html lang="en">
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet"></link>
 
           <script
             async

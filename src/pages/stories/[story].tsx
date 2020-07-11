@@ -28,7 +28,7 @@ const StoryBody = styled.div`
 const StoryTitle = styled.span`
   font-size: 1.4em;
   margin: 8px 0;
-  font-weight: 900;
+  font-weight: 600;
 `
 
 const StoryDate = styled.span`
