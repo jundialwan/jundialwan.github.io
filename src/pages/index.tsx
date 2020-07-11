@@ -1,25 +1,25 @@
 import Link from 'next/link'
 import stories, { Story } from '../stories-md'
 import { formatDate } from '../Utils'
-import { NextPage, NextPageContext, GetServerSideProps } from 'next'
+import { NextPage, GetServerSideProps } from 'next'
 import styled from 'styled-components'
 
-const PageTitle = styled.h1`
+export const PageTitle = styled.h1`
   font-size: larger;
   font-weight: 600;
   margin: 8px 0;
 `
 
-const StoryDate = styled.span`
+export const StoryDate = styled.span`
   font-size: smaller;
   color: #586069;
 `
 
-const StoryLink = styled.span`
+export const StoryLink = styled.span`
   font-weight: 600;
   cursor: pointer;
 `
-const StoryTeaser = styled.span`
+export const StoryTeaser = styled.span`
   color: #586069;
   font-size: smaller;
 `
