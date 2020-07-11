@@ -12,6 +12,15 @@ const stories: Story[] = [
     md: require('../stories-md/welcome.md').default
   },
   {
+    title: `It Is How Good You Want To Be`,
+    description: 'It is not how good you are',
+    url: 'it-is-how-good-you-want-to-be',
+    createdAt: '2020-07-11',
+    updatedAt: '2020-07-11',
+    tags: ['life', 'reflection', 'quotes'],
+    md: require('../stories-md/it-is-how-good-you-want-to-be.md').default
+  },
+  {
     title: 'Apa yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
     description: 'Kriteria dasar yang dibutuhkan software engineer saat ini.',
     url: 'persiapan-jadi-software-engineer',
@@ -62,7 +71,7 @@ const stories: Story[] = [
     url: 'run-alone-or-run-together',
     createdAt: '2020-04-26',
     updatedAt: '2020-04-26',
-    tags: ['life', 'refelctive', 'proverb'],
+    tags: ['life', 'reflection', 'proverb'],
     md: require('../stories-md/run-alone-or-run-together.md').default
   },
   {
