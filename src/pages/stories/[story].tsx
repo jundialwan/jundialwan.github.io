@@ -25,7 +25,7 @@ const StoryBody = styled.div`
   }
 `
 
-const StoryTitle = styled.span`
+const StoryTitle = styled.h1`
   font-size: 1.4em;
   margin: 8px 0;
   font-weight: 600;
@@ -89,7 +89,6 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
               <StoryTitle>
                 {story.title}
               </StoryTitle>
-              <br/>
               <StoryDate>
                 {formatDate(new Date(story.createdAt))}
               </StoryDate>

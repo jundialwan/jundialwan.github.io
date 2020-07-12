@@ -22,6 +22,16 @@ const stories: Story[] = [
     md: require('../stories-md/it-is-how-good-you-want-to-be.md').default
   },
   {
+    title: `A Technique for Producing Ideas`,
+    description: 'A principle and method of producing ideas',
+    url: 'a-technique-for-producing-ideas',
+    createdAt: '2020-07-12',
+    updatedAt: '2020-07-12',
+    tags: ['book', 'ideas'],
+    md: require('../stories-md/a-technique-for-producing-ideas.md').default,
+    priority: 0.6
+  },
+  {
     title: 'Apa yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
     description: 'Kriteria dasar yang dibutuhkan software engineer saat ini.',
     url: 'persiapan-jadi-software-engineer',
