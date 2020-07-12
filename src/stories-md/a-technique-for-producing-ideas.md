@@ -1,4 +1,5 @@
 ![dots](https://res.cloudinary.com/jundialwan/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594554622/dots-square-paper_r7oemv.jpg)
+*"Dots Square Paper" by Linnaea Mallette - CC0 Public Domain (https://www.publicdomainpictures.net/)*
 
 There is a book I was reading called "A Technique for Producing Ideas" by James Young. I forgot where did I first discover this books. Very slim, straightforward, and practical book.
 
