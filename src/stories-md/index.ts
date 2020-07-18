@@ -1,5 +1,19 @@
 const stories: Story[] = [
   {
+    title: 'V60 Pour-over Iced Coffee: My Recipe',
+    description: 'My version of iced coffee',
+    url: 'iced-coffee-pour-over-my-recipe.md',
+    createdAt: '2020-07-18',
+    updatedAt: '2020-07-18',
+    tags: [
+      'coffee',
+      'life',
+      'experiment'
+    ],
+    md: require('../stories-md/iced-coffee-pour-over-my-recipe.md').default,
+    priority: 0.6
+  },
+  {
     title: 'Welcome to this blog',
     description: 'New blogging platform, a fresh start.',
     url: 'welcome-to-this-blog',
