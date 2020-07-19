@@ -15,9 +15,18 @@ export const StoryDate = styled.span`
   color: #586069;
 `
 
-export const StoryLink = styled.span`
+export const StoryLink = styled.a`
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:link {
+    color: inherit;
+  }
 `
 export const StoryTeaser = styled.span`
   color: #586069;
@@ -31,15 +40,15 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
       <ul style={{ paddingInlineStart: '20px'}}>
         {
           allStories.map(s => (
-            <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`} passHref>
-              <li key={s.url} style={{marginBottom: '12px'}}>
-                <StoryLink>{s.title}</StoryLink>
+            <li key={s.url} style={{marginBottom: '12px'}}>
+                <Link key={s.url} href="/stories/[story]" as={`/stories/${s.url}`} passHref>
+                  <StoryLink>{s.title}</StoryLink>
+                </Link>
                 &nbsp;&nbsp;
                 <StoryDate>{formatDate(new Date(s.createdAt))}</StoryDate>
                 <br/>
                 <StoryTeaser>{s.description} </StoryTeaser>
               </li>
-            </Link>
           ))
         }
       </ul>

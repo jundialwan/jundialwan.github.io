@@ -9,13 +9,14 @@ import { NextPage } from 'next'
 import { DefaultSeo } from 'next-seo'
 import { GoogleAnalytics } from '../Utils'
 import { GlobalStyle, GlobalContainer, NavigationHeader, LogoType } from '../components/Util'
+import SEO from '../../next-seo.config'
+import styled from 'styled-components'
 
 // configure progress bar on top off app
 NProgress.configure({ trickleSpeed: 50 })
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start()
-  NProgress.inc(.24)
 })
 
 Router.events.on('routeChangeComplete', (url: string) => {
@@ -36,26 +37,10 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
         <title>jundialwan - Personal Blog. Product and Tech.</title>
       </Head>
       <DefaultSeo
-        title="jundialwan - Personal blog"
-        description="Personal blog by Jundi Alwan"
-        canonical="https://jundialwan.id"
-        openGraph={{
-          type: 'website',
-          locale: 'en_ID',
-          url: 'https://jundialwan.id/',
-          site_name: 'jundialwan - Personal Blog',
-          title: 'jundialwan - Personal blog',
-          description: 'Personal blog by Jundi Alwan',
-          images: [
-            { url: 'https://res.cloudinary.com/jundialwan/image/upload/v1595152236/bcg_ywdbsp.png' }
-          ]
-        }}
-        twitter={{
-          handle: '@ja_alwan',
-          site: '@ja_alwan',
-          cardType: 'summary'
-        }}
-        
+        title={SEO.openGraph.title}
+        description={SEO.openGraph.description}
+        canonical={SEO.openGraph.url}
+        {...SEO}
       />
       <div id="top"></div>
       <GlobalContainer>
@@ -70,10 +55,23 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
         </NavigationHeader> 
         <hr/>
         <Component {...pageProps} />
+        <hr/>
+        <Footer>
+          <a href="/feed.xml" target="_blank" rel="noopener noreferrer">RSS</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
+        </Footer>
       </GlobalContainer>
     </>
   )
 }
+
+const Footer = styled.div`
+  text-align: center;
+
+  & > a {
+    margin-right: 12px;
+  }
+`
 
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
