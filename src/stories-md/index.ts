@@ -1,7 +1,7 @@
 const stories: Story[] = [
   {
     title: 'V60 Pour-over Iced Coffee: My Recipe',
-    description: 'My version of iced coffee',
+    description: 'My version of V60 pour-over iced coffee',
     url: 'iced-coffee-pour-over-my-recipe',
     createdAt: '2020-07-18',
     updatedAt: '2020-07-18',
@@ -11,7 +11,8 @@ const stories: Story[] = [
       'experiment'
     ],
     md: require('../stories-md/iced-coffee-pour-over-my-recipe.md').default,
-    priority: 0.6
+    priority: 0.6,
+    image: 'https://res.cloudinary.com/jundialwan/image/upload/v1595144064/20200719_143059_vxqgor.jpg'
   },
   {
     title: 'Welcome to this blog',
@@ -33,17 +34,19 @@ const stories: Story[] = [
     createdAt: '2020-07-11',
     updatedAt: '2020-07-11',
     tags: ['life', 'reflection', 'quotes'],
-    md: require('../stories-md/it-is-how-good-you-want-to-be.md').default
+    md: require('../stories-md/it-is-how-good-you-want-to-be.md').default,
+    image: 'https://res.cloudinary.com/jundialwan/image/upload/v1594477860/paintbrush_canyon_devgov.jpg'
   },
   {
     title: `A Technique for Producing Ideas`,
-    description: 'A principle and method of producing ideas',
+    description: 'A principle and method of producing ideas from James Young',
     url: 'a-technique-for-producing-ideas',
     createdAt: '2020-07-12',
     updatedAt: '2020-07-12',
     tags: ['book', 'ideas'],
     md: require('../stories-md/a-technique-for-producing-ideas.md').default,
-    priority: 0.6
+    priority: 0.6,
+    image: 'https://res.cloudinary.com/jundialwan/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594554622/dots-square-paper_r7oemv.jpg'
   },
   {
     title: 'Apa yang Harus Disiapin Kalau Mau Jadi Software Engineer?',
@@ -70,7 +73,8 @@ const stories: Story[] = [
     createdAt: '2020-04-02',
     updatedAt: '2020-04-02',
     tags: ['life', 'rubiks'],
-    md: require('../stories-md/me-and-rubiks-cube.md').default
+    md: require('../stories-md/me-and-rubiks-cube.md').default,
+    image: 'https://res.cloudinary.com/jundialwan/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1585763155/VideoCapture_20200402-004415_ey0j83.jpg'
   },
   {
     title: `Pahlawan Kertas 📜`,
@@ -98,7 +102,8 @@ const stories: Story[] = [
     updatedAt: '2020-04-26',
     tags: ['life', 'reflection', 'proverb'],
     md: require('../stories-md/run-alone-or-run-together.md').default,
-    priority: 0.6
+    priority: 0.6,
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/ElephantZambia2.JPG'
   },
   {
     title: `Kala Langit Masih Tidur 📜`,
@@ -122,5 +127,6 @@ export type Story = {
   updatedAt: string,
   tags: string[],
   md: string,
-  priority?: number
+  priority?: number,
+  image?: string
 }

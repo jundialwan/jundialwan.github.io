@@ -1,4 +1,4 @@
-import { BlogJsonLd } from 'next-seo'
+import { BlogJsonLd, NextSeo } from 'next-seo'
 import ReactMarkdown from 'react-markdown'
 import stories, { Story } from '../../stories-md'
 import { NextPage, NextPageContext, GetStaticProps, GetStaticPaths } from 'next'
@@ -66,6 +66,21 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
           )
         }
       </Head>
+      <NextSeo
+        title={story.title}
+        description={story.description}
+        canonical={`https://jundialwan.id/stories/${story.url}`}
+        openGraph={{
+          type: 'website',
+          locale: 'en_ID',
+          url: `https://jundialwan.id/stories/${story.url}`,
+          title: story.title,
+          description: story.description,
+          images: story.image ? [
+            { url: story.image }
+          ] : []
+        }}
+      />
       {
         !router.isFallback && story === undefined ?
         (
@@ -83,7 +98,7 @@ const StoryPage: NextPage<{ story: Story }> = ({ story }) => {
                 dateModified={(new Date(story.updatedAt)).toString()}
                 description={story.description}
                 authorName="Jundi Alwan"
-                images={[]}
+                images={story.image ? [story.image] : []}
               />
               
               <StoryTitle>

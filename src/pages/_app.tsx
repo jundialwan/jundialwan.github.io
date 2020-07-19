@@ -36,20 +36,26 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
         <title>jundialwan - Personal Blog. Product and Tech.</title>
       </Head>
       <DefaultSeo
+        title="jundialwan - Personal blog"
+        description="Personal blog by Jundi Alwan"
+        canonical="https://jundialwan.id"
         openGraph={{
           type: 'website',
           locale: 'en_ID',
           url: 'https://jundialwan.id/',
           site_name: 'jundialwan - Personal Blog',
+          title: 'jundialwan - Personal blog',
+          description: 'Personal blog by Jundi Alwan',
+          images: [
+            { url: 'https://res.cloudinary.com/jundialwan/image/upload/v1595152236/bcg_ywdbsp.png' }
+          ]
         }}
         twitter={{
           handle: '@ja_alwan',
           site: '@ja_alwan',
           cardType: 'summary'
         }}
-        description="Personal blog by Jundi Alwan. I write about tech, product, startup. Still learning."
-        canonical="https://jundialwan.id"
-        title="jundialwan - Personal blog. Product and Tech."
+        
       />
       <div id="top"></div>
       <GlobalContainer>
@@ -61,7 +67,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
               </a>
             </Link>
           </LogoType>
-        </NavigationHeader>
+        </NavigationHeader> 
         <hr/>
         <Component {...pageProps} />
       </GlobalContainer>
