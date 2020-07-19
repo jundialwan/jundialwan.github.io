@@ -2,7 +2,7 @@ const stories: Story[] = [
   {
     title: 'V60 Pour-over Iced Coffee: My Recipe',
     description: 'My version of iced coffee',
-    url: 'iced-coffee-pour-over-my-recipe.md',
+    url: 'iced-coffee-pour-over-my-recipe',
     createdAt: '2020-07-18',
     updatedAt: '2020-07-18',
     tags: [
