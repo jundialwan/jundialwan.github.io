@@ -1,5 +1,20 @@
 const stories: Story[] = [
   {
+    title: 'Consumer vs Enterprise',
+    description: 'About marketing, scaling, etc',
+    url: 'consumer-vs-enterprise',
+    createdAt: '2020-07-21',
+    updatedAt: '2020-07-21',
+    tags: [
+      'business',
+      'startup',
+      'work'
+    ],
+    md: require('../stories-md/consumer-vs-enterprise.md').default,
+    priority: 0.6,
+    image: 'https://res.cloudinary.com/jundialwan/image/upload/v1595267562/20200721_005218_zryzmi.jpg'
+  },
+  {
     title: 'V60 Pour-over Iced Coffee: My Recipe',
     description: 'My version of V60 pour-over iced coffee',
     url: 'iced-coffee-pour-over-my-recipe',
