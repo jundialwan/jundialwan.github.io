@@ -1,7 +1,7 @@
 import stories, { Story } from '../../stories-md'
 import Link from 'next/link'
 import { formatDate } from '../../Utils'
-import { NextPage, GetServerSideProps } from 'next'
+import { NextPage, GetStaticProps } from 'next'
 import { PageTitle, StoryLink, StoryDate, StoryTeaser } from '..'
 
 const Stories: NextPage<{ allStories: Story[] }> = ({ allStories }) => {
@@ -27,7 +27,7 @@ const Stories: NextPage<{ allStories: Story[] }> = ({ allStories }) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const sortedLatestStories = stories.sort((s1, s2) => {    
     const story1 = new Date(s1.createdAt)
     const story2 = new Date(s2.createdAt)

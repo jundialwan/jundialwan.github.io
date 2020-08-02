@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import stories, { Story } from '../stories-md'
 import { formatDate } from '../Utils'
-import { NextPage, GetServerSideProps } from 'next'
+import { NextPage, GetStaticProps } from 'next'
 import styled from 'styled-components'
 
 export const PageTitle = styled.h1`
@@ -56,7 +56,7 @@ const Home: NextPage<{ allStories: Story[] }>  = ({ allStories }) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const sortedLatestStories = stories.sort((s1, s2) => {    
     const story1 = new Date(s1.createdAt)
     const story2 = new Date(s2.createdAt)
